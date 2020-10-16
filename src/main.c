@@ -1,9 +1,8 @@
-#include "core/core.h"
+#include "controller/controller.h"
 
 int main(void) {
-    core_init();
-    core_log();
-    core_move(1, 2, RIGHT);
-    core_log();
+    controller_init();
+    for (; controller_handle(););
+    controller_finalize();
     return 0;
 }
