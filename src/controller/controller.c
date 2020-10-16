@@ -71,6 +71,8 @@ char controller_handle(void) {
         break;
     case 'Z':
     case 'z':
+    case 'J':
+    case 'j':
         mode = !mode;
         break;
     case 'R':
