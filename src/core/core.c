@@ -110,7 +110,7 @@ static char check(char r, char c) {
     return 1;
 }
 
-static char check_all(void) {
+static void check_all(void) {
     for (char i = 0; i < 20; ++i) {
         for (char j = 0; j < 20; ++j) {
             check(i, j);
