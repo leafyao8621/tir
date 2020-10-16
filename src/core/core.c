@@ -15,6 +15,7 @@ void core_init(void) {
     char temp = 0;
     char cont = 0;
     score = 0;
+    srand(time(0));
     for (char i = 0, *iter = grid; i < 20; ++i) {
         for (char j = 0; j < 20; ++j, ++iter) {
             cont = 1;
@@ -36,14 +37,6 @@ void core_init(void) {
             *iter = temp;
         }
     }
-    grid[21] = '$';
-    grid[2] = '$';
-    grid[42] = '$';
-    grid[3] = '&';
-    grid[43] = '&';
-    grid[24] = '&';
-    grid[25] = '&';
-    grid[23] = '$';
 }
 
 void core_log(void) {
