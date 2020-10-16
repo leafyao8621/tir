@@ -98,7 +98,6 @@ static char check(char r, char c) {
         }
     }
     if ((ier - isr >= 2) || (iec - isc >= 2)) {
-
         if (ier - isr >= 2) {
             for (char *i = sr; i <= er; *i |= MARK, i += 20);
         }
